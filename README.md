@@ -1,6 +1,6 @@
 # TimeLineView
-  - TimeLineView is a open library and It allow to display events base on date, which provide by you.
-  - TimeLineView also public some apis for you easier to edit and change theme. 
+  - TimeLineView is an open library. It allows displaying events base on dates.
+  - TimeLineView also public some APIs, Which will help easily to extend and edit.  
   
   ![Simulator Screen Shot - iPhone 8 - 2020-10-16 at 16 20 23](https://user-images.githubusercontent.com/15699560/96234516-21d0a900-0fcc-11eb-83e3-ace538e53ee8.png)
   
