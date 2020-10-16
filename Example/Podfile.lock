@@ -1,0 +1,16 @@
+PODS:
+  - TimeLineView (0.0.1)
+
+DEPENDENCIES:
+  - TimeLineView (from `../`)
+
+EXTERNAL SOURCES:
+  TimeLineView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TimeLineView: 40f7db593401eeae87e21b45e86f99221dbc24b5
+
+PODFILE CHECKSUM: aa71d486a6e4448473a1536bae385f65045acd75
+
+COCOAPODS: 1.9.3
