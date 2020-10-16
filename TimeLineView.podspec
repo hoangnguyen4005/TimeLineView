@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'TimeLineView'
   s.version          = '0.0.1'
   s.summary          = 'TimeLineView is design library pod'
-  s.description      = "TimeLineView is a library, which supports show time line"
+  s.description      = "TimeLineView is an open library. It allows displaying events base on dates"
   s.homepage         = 'https://github.com/nguyenhoangit57'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Hoang Nguyen' => 'hoangnguyen4005@gmail.com' }

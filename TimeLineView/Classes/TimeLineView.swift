@@ -11,16 +11,16 @@ public struct TimeLineModel {
     public var dayMonthYear: String!
     public var secondHourGMT: String!
     public var title: String!
-    public var assignName: String!
+    public var author: String!
     public init() {}
     public init(dayMonthYear: String,
                 secondHourGMT: String,
                 title: String,
-                assignName: String) {
+                author: String) {
         self.dayMonthYear = dayMonthYear
         self.secondHourGMT = secondHourGMT
         self.title = title
-        self.assignName = assignName
+        self.author = author
     }
 }
 
@@ -29,12 +29,12 @@ extension TimeLineModel: Equatable {
         return lhs.dayMonthYear == rhs.dayMonthYear &&
             lhs.secondHourGMT == rhs.secondHourGMT &&
             lhs.title == rhs.title &&
-            lhs.assignName == rhs.assignName
+            lhs.author == rhs.author
     }
 }
 
 public protocol TimeLineViewDataSource: class {
-    func numberOfItems(_ timeLineView: TimeLineView) -> [TimeLineModel]
+    func timeLineData(_ timeLineView: TimeLineView) -> [TimeLineModel]
 }
 
 public class TimeLineView: UIView {
@@ -61,12 +61,12 @@ public class TimeLineView: UIView {
         var indexDraw: Int = 0
         var previousPoint: CGPoint!
         var nextPoint: CGPoint!
-        for item in dataSource.numberOfItems(self) {
+        for item in dataSource.timeLineData(self) {
             let auditTrail = TimeLineItemView()
             auditTrail.topDate = item.dayMonthYear
             auditTrail.bottomDate = item.secondHourGMT
             auditTrail.title = item.title
-            auditTrail.assign = item.assignName
+            auditTrail.assign = item.author
             self.stackView.addArrangedSubview(auditTrail)
             self.stackView.layoutIfNeeded()
             indexDraw += 1

@@ -21,27 +21,27 @@ class ViewController: UIViewController {
         let item1 = TimeLineModel(dayMonthYear: "20 Oct 2020,",
                                   secondHourGMT: "01:07:02 AM (GMT+8)",
                                   title: "Created By",
-                                  assignName: "Chi Hoang")
+                                  author: "Chi Hoang")
         
         let item2 = TimeLineModel(dayMonthYear: "28 Oct 2020,",
                                   secondHourGMT: "01:07:02 AM (GMT+8)",
                                   title: "Comment By",
-                                  assignName: "Harry")
+                                  author: "Harry")
         
         let item3 = TimeLineModel(dayMonthYear: "20 Oct 2020,",
                                   secondHourGMT: "01:07:02 AM (GMT+8)",
                                   title: "Pending By",
-                                  assignName: "Harry Nguyen")
+                                  author: "Harry Nguyen")
         
         let item4 = TimeLineModel(dayMonthYear: "30 Oct 2020,",
                                   secondHourGMT: "01:07:02 AM (GMT+8)",
                                   title: "Approved By",
-                                  assignName: "Nguyen Chi Hoang")
+                                  author: "Nguyen Chi Hoang")
         return [item1, item2, item3, item4]
     }
 }
 extension ViewController: TimeLineViewDataSource {
-    func numberOfItems(_ timeLineView: TimeLineView) -> [TimeLineModel] {
+    func timeLineData(_ timeLineView: TimeLineView) -> [TimeLineModel] {
         return createMockup()
     }
 }

@@ -2,7 +2,7 @@
   "name": "TimeLineView",
   "version": "0.0.1",
   "summary": "TimeLineView is design library pod",
-  "description": "TimeLineView is a library, which supports show time line",
+  "description": "TimeLineView is an open library. It allows displaying events base on dates",
   "homepage": "https://github.com/nguyenhoangit57",
   "license": {
     "type": "MIT",
